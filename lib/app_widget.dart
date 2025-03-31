@@ -11,8 +11,17 @@ class AppWWidget extends StatelessWidget{
     return MaterialApp(
       theme:ThemeData(
         colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.yellow,
+          primarySwatch: Colors.red,
           accentColor: Colors.red,
+        ),
+        appBarTheme: AppBarTheme(
+          color: Colors.purple,
+          centerTitle: true,
+          titleTextStyle: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
         ),
       ),
       home: HomePage(),
