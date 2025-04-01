@@ -1,29 +1,18 @@
 import 'home_page.dart';
 import 'package:flutter/material.dart';
+import 'core/theme/app_theme.dart';
+
 
 
 class AppWWidget extends StatelessWidget{
+ const AppWWidget({super.key});
 
 
   @override
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      theme:ThemeData(
-        colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.red,
-          accentColor: Colors.red,
-        ),
-        appBarTheme: AppBarTheme(
-          color: Colors.purple,
-          centerTitle: true,
-          titleTextStyle: TextStyle(
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
-        ),
-      ),
+      theme: AppTheme.lightTheme,
       home: HomePage(),
     );
   }
